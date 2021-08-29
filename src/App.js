@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react';
+import './App.sass';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div className="container">
+        <div className="flexboxCol">
+          <h1>Deryck.dev</h1>
+        </div>
+      </div>
+    </Fragment>
   );
 }
 
