@@ -15,14 +15,27 @@ html
   background: radial-gradient(ellipse at bottom, #0F0823 0%, black 100%)
   overflow: hidden
 
-h1
+*
+  font-family: 'Roboto Slab', serif
+  text-align: center
+
+.header
   color: white
+  font-size: 100px
+  font-weight: 200
+  margin: 10px
+
+.container
+  max-width: 60%
+  margin: 0 auto
+
+.titleText
+  color: white
+  font-size: 24px
+
+.flex
   display: flex
   justify-content: center
-  font-family: 'Roboto Slab', serif
-  font-size: 50px
-  font-weight: 700
-  margin: 50px
 
 .flexboxRow
   display: flex
@@ -30,7 +43,31 @@ h1
 
 .flexboxCol
   display: flex
+  justify-content: center
   flex-direction: column
+
+.navbar
+  bottom: 0
+  position: fixed
+  margin: 30px auto
+  width: 60%
+
+.navbar a
+  color: white
+  padding: 10px
+  font-weight: 200
+  font-size: 20px
+  text-decoration: none
+
+.navbar a:hover
+  text-decoration: underline
+
+.navbar hr
+  border: 0
+  height: 2px
+  margin: 18px 0
+  position: relative
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
 
 #stars
   width: 1px
