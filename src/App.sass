@@ -13,16 +13,32 @@ $shadows-big: multiple-box-shadow(100)
 html
   height: 100%
   background: radial-gradient(ellipse at bottom, #0F0823 0%, black 100%)
+  background-attachment: fixed
   overflow: hidden
+  margin: 0
 
-h1
+*
+  font-family: 'Roboto Slab', serif
+  text-align: center
+
+.header
   color: white
+  font-size: 100px
+  font-weight: 200
+  margin: 10px
+
+.container
+  position: relative
+  max-width: 60%
+  margin: 0 auto
+
+.titleText
+  color: white
+  font-size: 24px
+
+.flex
   display: flex
   justify-content: center
-  font-family: 'Roboto Slab', serif
-  font-size: 50px
-  font-weight: 700
-  margin: 50px
 
 .flexboxRow
   display: flex
@@ -30,7 +46,43 @@ h1
 
 .flexboxCol
   display: flex
+  justify-content: center
   flex-direction: column
+
+.navbar
+  bottom: 0
+  position: fixed
+  margin: 30px auto
+  width: 60%
+
+.links
+  overflow: hidden
+  animation: slidein 1s
+
+.links a
+  color: white
+  padding: 10px
+  font-weight: 300
+  font-size: 20px
+  text-decoration: none
+
+.links a:hover
+  text-decoration: underline
+
+.navbar hr
+  border: 0
+  height: 2px
+  margin: 18px 0
+  position: relative
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
+
+  @keyframes slidein
+    from
+      opacity: 0
+      transform: translateX(-400px)
+    to
+      opacity: 1
+      transform: translateX(0px)
 
 #stars
   width: 1px
@@ -42,7 +94,7 @@ h1
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    bottom: 2000px
     width: 1px
     height: 1px
     background: transparent
@@ -58,7 +110,7 @@ h1
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    bottom: 2000px
     width: 2px
     height: 2px
     background: transparent
@@ -74,7 +126,7 @@ h1
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    bottom: 2000px
     width: 3px
     height: 3px
     background: transparent

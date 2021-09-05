@@ -1,5 +1,7 @@
 import { Fragment } from 'react';
 import './App.sass';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -7,10 +9,9 @@ function App() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <div className="container">
-        <div className="flexboxCol">
-          <h1>Deryck.dev</h1>
-        </div>
+      <div className="flexboxCol container">
+        <Header />
+        <Navbar />
       </div>
     </Fragment>
   );
