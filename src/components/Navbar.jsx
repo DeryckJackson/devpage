@@ -5,9 +5,11 @@ function Navbar() {
     <Fragment>
       <div className="navbar">
         <hr />
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div className="links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </Fragment>
   )

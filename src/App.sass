@@ -13,7 +13,9 @@ $shadows-big: multiple-box-shadow(100)
 html
   height: 100%
   background: radial-gradient(ellipse at bottom, #0F0823 0%, black 100%)
+  background-attachment: fixed
   overflow: hidden
+  margin: 0
 
 *
   font-family: 'Roboto Slab', serif
@@ -26,6 +28,7 @@ html
   margin: 10px
 
 .container
+  position: relative
   max-width: 60%
   margin: 0 auto
 
@@ -52,14 +55,18 @@ html
   margin: 30px auto
   width: 60%
 
-.navbar a
+.links
+  overflow: hidden
+  animation: slidein 1s
+
+.links a
   color: white
   padding: 10px
-  font-weight: 200
+  font-weight: 300
   font-size: 20px
   text-decoration: none
 
-.navbar a:hover
+.links a:hover
   text-decoration: underline
 
 .navbar hr
@@ -68,6 +75,14 @@ html
   margin: 18px 0
   position: relative
   background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
+
+  @keyframes slidein
+    from
+      opacity: 0
+      transform: translateX(-400px)
+    to
+      opacity: 1
+      transform: translateX(0px)
 
 #stars
   width: 1px
@@ -79,7 +94,7 @@ html
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    bottom: 2000px
     width: 1px
     height: 1px
     background: transparent
@@ -95,7 +110,7 @@ html
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    bottom: 2000px
     width: 2px
     height: 2px
     background: transparent
@@ -111,7 +126,7 @@ html
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    bottom: 2000px
     width: 3px
     height: 3px
     background: transparent
