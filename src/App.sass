@@ -21,39 +21,29 @@ html
   font-family: 'Roboto Slab', serif
   text-align: center
 
-.header
-  color: white
-  font-size: 100px
-  font-weight: 200
-  margin: 10px
-
 .container
   position: relative
   max-width: 60%
   margin: 0 auto
 
-.titleText
-  color: white
-  font-size: 24px
-
 .flex
   display: flex
   justify-content: center
-
-.flexboxRow
-  display: flex
-  flex-direction: row
 
 .flexboxCol
   display: flex
   justify-content: center
   flex-direction: column
 
-.navbar
-  bottom: 0
-  position: fixed
-  margin: 30px auto
-  width: 60%
+.flexboxRow
+  display: flex
+  flex-direction: row
+
+.header
+  color: white
+  font-size: 100px
+  font-weight: 200
+  margin: 10px
 
 .links
   overflow: hidden
@@ -69,20 +59,37 @@ html
 .links a:hover
   text-decoration: underline
 
+.navbar
+  bottom: 0
+  position: fixed
+  margin: 30px auto
+  width: 60%
+
+.navbar a
+  margin: 0px 5px
+
 .navbar hr
   border: 0
   height: 2px
-  margin: 18px 0
+  margin: 15px 0
   position: relative
   background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
 
-  @keyframes slidein
-    from
-      opacity: 0
-      transform: translateX(-400px)
-    to
-      opacity: 1
-      transform: translateX(0px)
+.skills
+  color: white
+  font-size: 20px
+
+.titleText
+  color: white
+  font-size: 24px
+
+@keyframes slidein
+  from
+    opacity: 0
+    transform: translateX(-400px)
+  to
+    opacity: 1
+    transform: translateX(0px)
 
 #stars
   width: 1px
@@ -132,29 +139,8 @@ html
     background: transparent
     box-shadow: $shadows-big
 
-#title
-  position: absolute
-  top: 50%
-  left: 0
-  right: 0
-
-  color: #FFF
-  text-align: center
-  font-family: 'lato',sans-serif
-  font-weight: 300
-  font-size: 50px
-  letter-spacing: 10px
-
-  margin-top: -60px
-  padding-left: 10px
-
-  span
-    background: -webkit-linear-gradient(white, #38495a)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-
 @keyframes animStar
   from
     transform: translateY(0px)
   to
-    transform: translateY(-2000px)
+    transform: translateY(2000px)
