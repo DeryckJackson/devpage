@@ -12,7 +12,6 @@ function Navbar() {
         <a href="https://www.linkedin.com/in/deryckjackson/">
           <img src={linkedinPNG} alt="linkedin icon" rel="noopener noreferrer" />
         </a>
-        <hr />
         <div className="links">
           <a href="mailto:dgjackson01@gmail.com">Contact</a>
         </div>
