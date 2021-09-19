@@ -6,15 +6,15 @@ function Navbar() {
   return (
     <Fragment>
       <div className="navbar">
+        <div className="links">
+          <a href="mailto:dgjackson01@gmail.com">Contact</a>
+        </div>
         <a href="https://github.com/DeryckJackson">
           <img src={githubPNG} alt="github icon" rel="noopener noreferrer" />
         </a>
         <a href="https://www.linkedin.com/in/deryckjackson/">
           <img src={linkedinPNG} alt="linkedin icon" rel="noopener noreferrer" />
         </a>
-        <div className="links">
-          <a href="mailto:dgjackson01@gmail.com">Contact</a>
-        </div>
       </div>
     </Fragment>
   )

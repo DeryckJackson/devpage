@@ -48,6 +48,9 @@ html
 .links
   overflow: hidden
   animation: slideinX 1s ease-in 0s
+  animation-delay: 1s
+  animation-fill-mode: forwards
+  visibility: hidden
   margin: 8px 0
 
 .links a
@@ -72,6 +75,11 @@ html
 .projects div
   margin: 25px 0
   animation: slideinX 1s ease-in 0s
+  animation-fill-mode: forwards
+  visibility: hidden
+
+.projects div:nth-child(4)
+  animation-delay: 0.5s
 
 .projects a
   text-decoration: none
@@ -118,12 +126,13 @@ html
     transform: translateY(0px)
 
 @keyframes slideinX
-  from
+  0%
     opacity: 0
     transform: translateX(-100px)
-  to
+  100%
     opacity: 1
     transform: translateX(0px)
+    visibility: visible
 
 #stars
   width: 1px
