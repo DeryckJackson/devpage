@@ -12,7 +12,7 @@ $shadows-big: multiple-box-shadow(100)
 
 html
   height: 100%
-  background: radial-gradient(ellipse at bottom, #0F0823 0%, black 100%)
+  background: radial-gradient(ellipse at bottom, #141842 0%, black 100%)
   background-attachment: fixed
   overflow: hidden
   margin: 0
@@ -24,7 +24,7 @@ html
 
 .container
   position: relative
-  max-width: 60%
+  max-width: 80%
   margin: 0 auto
 
 .flex
@@ -41,9 +41,9 @@ html
   flex-direction: row
 
 .header
-  font-size: 100px
+  font-size: 80px
   font-weight: 200
-  margin: 10px
+  margin: 20px
 
 .links
   overflow: hidden
@@ -51,7 +51,7 @@ html
   animation-delay: 1s
   animation-fill-mode: forwards
   visibility: hidden
-  margin: 8px 0
+  margin: 10px 0
 
 .links a
   padding: 10px
@@ -63,13 +63,22 @@ html
 .links a:hover
   text-decoration: underline
 
+.navbar
+  bottom: 0
+  position: fixed
+  margin: 10px auto
+  width: 80%
+
+.navbar a
+  margin: 0px 5px
+
 .projects h2
   margin: 10px auto 0
   font-weight: 400
-  font-size: 40px
+  font-size: 30px
 
 .projects p
-  font-size: 26px
+  font-size: 22px
   margin: 5px 0
 
 .projects div
@@ -95,27 +104,94 @@ html
   position: relative
   background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
 
-.navbar
-  bottom: 0
-  position: fixed
-  margin: 10px auto
-  width: 60%
-
-.navbar a
-  margin: 0px 5px
-
-.navbar hr
-  border: 0
-  height: 2px
-  margin: 15px 0
-  position: relative
-  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
-
-.skills
+.titleText
   font-size: 20px
 
-.titleText
-  font-size: 24px
+.skills
+  font-size: 18px
+
+@media (min-width: 642px)
+  .container
+    position: relative
+    max-width: 60%
+    margin: 0 auto
+
+  .header
+    font-size: 100px
+    font-weight: 200
+    margin: 10px
+
+  .links
+    overflow: hidden
+    animation: slideinX 1s ease-in 0s
+    animation-delay: 1s
+    animation-fill-mode: forwards
+    visibility: hidden
+    margin: 8px 0
+
+  .links a
+    padding: 10px
+    font-weight: 400
+    font-size: 20px
+    text-decoration: none
+    color: mediumorchid
+
+  .links a:hover
+    text-decoration: underline
+
+  .projects h2
+    margin: 10px auto 0
+    font-weight: 400
+    font-size: 40px
+
+  .projects p
+    font-size: 26px
+    margin: 5px 0
+
+  .projects div
+    margin: 25px 0
+    animation: slideinX 1s ease-in 0s
+    animation-fill-mode: forwards
+    visibility: hidden
+
+  .projects div:nth-child(4)
+    animation-delay: 0.5s
+
+  .projects a
+    text-decoration: none
+    color: mediumorchid
+
+  .projects a:hover
+    text-decoration: underline
+
+  .projects hr
+    border: 0
+    height: 2px
+    margin: 15px 0
+    position: relative
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
+
+  .navbar
+    bottom: 0
+    position: fixed
+    margin: 10px auto
+    width: 60%
+
+  .navbar a
+    margin: 0px 5px
+
+  .navbar hr
+    border: 0
+    height: 2px
+    margin: 15px 0
+    position: relative
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%)
+
+  .skills
+    font-size: 20px
+
+  .titleText
+    font-size: 24px
 
 @keyframes slideinY
   from
