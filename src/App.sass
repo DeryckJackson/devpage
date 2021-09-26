@@ -47,7 +47,7 @@ html
 .links
   overflow: hidden
   animation: slideinX 1s ease-in 0s
-  animation-delay: 1s
+  animation-delay: 1.5s
   animation-fill-mode: forwards
   visibility: hidden
   margin: 10px 0
@@ -93,6 +93,9 @@ html
 .projects div:nth-child(4)
   animation-delay: 0.5s
 
+.projects div:nth-child(5)
+  animation-delay: 1s
+
 .projects a
   text-decoration: none
   color: mediumorchid
@@ -127,7 +130,7 @@ html
   .links
     overflow: hidden
     animation: slideinX 1s ease-in 0s
-    animation-delay: 1s
+    animation-delay: 1.5s
     animation-fill-mode: forwards
     visibility: hidden
     margin: 8px 0
@@ -148,7 +151,7 @@ html
     font-size: 40px
 
   .projects h3
-    font-size: 20px
+    font-size: 22px
     font-weight: 400
     margin: .5em
 
@@ -164,6 +167,9 @@ html
 
   .projects div:nth-child(4)
     animation-delay: 0.5s
+
+  .projects div:nth-child(5)
+    animation-delay: 1s
 
   .projects a
     text-decoration: none
@@ -181,8 +187,8 @@ html
 
   .navbar
     bottom: 0
+    overflow: hidden
     position: fixed
-    margin: 10px auto
     width: 60%
 
   .navbar a
@@ -222,14 +228,14 @@ html
   width: 1px
   height: 1px
   background: transparent
+  overflow: hidden
   box-shadow: $shadows-small
-  animation: animStar 100s linear infinite
+  animation: animStar 50s linear infinite
 
   &:after
     content: " "
     position: absolute
-    bottom: 2000px
-    overflow: hidden
+    top: 2000px
     width: 1px
     height: 1px
     background: transparent
@@ -239,14 +245,14 @@ html
   width: 2px
   height: 2px
   background: transparent
+  overflow: hidden
   box-shadow: $shadows-medium
-  animation: animStar 125s linear infinite
+  animation: animStar 75s linear infinite
 
   &:after
     content: " "
     position: absolute
-    bottom: 2000px
-    overflow: hidden
+    top: 2000px
     width: 2px
     height: 2px
     background: transparent
@@ -256,14 +262,14 @@ html
   width: 3px
   height: 3px
   background: transparent
+  overflow: hidden
   box-shadow: $shadows-big
-  animation: animStar 150s linear infinite
+  animation: animStar 100s linear infinite
 
   &:after
     content: " "
     position: absolute
-    bottom: 2000px
-    overflow: hidden
+    top: 2000px
     width: 3px
     height: 3px
     background: transparent
@@ -273,4 +279,4 @@ html
   from
     transform: translateY(0px)
   to
-    transform: translateY(2000px)
+    transform: translateY(-1000px)
